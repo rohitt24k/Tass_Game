@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tass Game</title>
+
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- linking the google font poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Enter the Players Name</h1>
+
+    <div id="nameBarContainer">
+      <div class="labelNameContainer" id="leftLabelNameContainer">
+        <label class="nameContainer"
+          ><input type="text" id="firstPlayerName" placeholder=" " />
+          <div class="nameLabel">1st Player</div>
+        </label>
+      </div>
+
+      <div class="labelNameContainer" id="rightLabelNameContainer">
+        <label class="nameContainer"
+          ><input type="text" id="secondPlayerName" placeholder=" " />
+          <div class="nameLabel">2nd Player</div>
+        </label>
+      </div>
+    </div>
+
+    <button onclick="cssChange()" id="playButton">PLAY</button>
+
+    <br />
+    <div class="allCards">
+      <div class="playerCards" id="firstPlayerCards">
+        <img
+          src=""
+          class="player_1"
+          id="1.1"
+          onclick="changePathOfPhoto('1.1',
+        p[0], a[0]);"
+        />
+        <img
+          src=""
+          class="player_1"
+          id="1.2"
+          onclick="changePathOfPhoto('1.2', p[1], a[1]);"
+        />
+        <img
+          src=""
+          class="player_1"
+          id="1.3"
+          onclick="changePathOfPhoto('1.3', p[2], a[2]);"
+        />
+      </div>
+      <div class="playerCards" id="secondPlayerCards">
+        <img
+          src=""
+          class="player_2"
+          id="2.1"
+          onclick="changePathOfPhoto('2.1',
+        p[3], a[3]);"
+        />
+        <img
+          src=""
+          class="player_2"
+          id="2.2"
+          onclick="changePathOfPhoto('2.2', p[4], a[4]);"
+        />
+        <img
+          src=""
+          class="player_2"
+          id="2.3"
+          onclick="changePathOfPhoto('2.3', p[5],
+        a[5]);"
+        />
+      </div>
+    </div>
+
+    <!-- linking the javascript file -->
+    <!-- <script src="./script.js"></script> -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
